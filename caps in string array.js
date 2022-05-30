@@ -37,6 +37,23 @@ let string="To travel is to live";
  }(myString);
  
 
+//using title caps in Arrow function
+
+ var myString1= "TO TRAVEL is TO live";
+ 
+ var str1= (myString1) =>{
+    var sent2 = myString1.toLowerCase().split(" ");
+    for(var i = 0; i< sent2.length; i++){
+       sent2[i] = sent2[i][0].toUpperCase() + sent2[i].slice(1);
+    }
+ sent2.join(" ");
+ var res="";
+ for(let i=0;i<sent2.length;i++)
+ {
+     res+=sent2[i]+" "
+ }
+ console.log(res);
+ };str1(myString);
 
 
  
