@@ -46,3 +46,28 @@ var sum =function(b){
 }
 console.log(sum(b));
 
+
+//prime numbers using Arrow function
+
+var c=[1,2,3,4,5,6,7,8,9,11,17];
+
+var prime =(c)=>{
+    var  res="";
+    for(i=0;i<c.length;i++)
+    {
+        var count=0;
+        for(j=1;j<=c[i];j++)
+        {
+            if(c[i]%j===0)
+            {
+                count++
+            }
+        }
+        if(count==2)
+        {
+            res+=c[i]+" "
+        }
+    }
+    return res;
+}
+console.log(prime(c));
